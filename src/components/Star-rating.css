@@ -1,0 +1,32 @@
+.star-rating {
+    display: flex;
+    gap: 2px;
+    line-height: 1;
+  }
+  
+  .star {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  .star-bg,
+  .star-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .star-bg {
+    color: #ddd;
+  }
+  
+  .star-fill {
+    color: gold;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+  }
+  

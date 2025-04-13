@@ -28,48 +28,49 @@ export default function Navbar() {
                 {/* Men sections */}
                 <div className="me-5">
                   <h6 className="fw-bold">Topwear</h6>
-                  <Link className="dropdown-item" to="/category/men/tshirts">T-Shirts</Link>
-                  <Link className="dropdown-item" to="/category/men/shirts">Shirts</Link>
-                  <Link className="dropdown-item" to="/category/men/jackets">Jackets</Link>
-                  <Link className="dropdown-item" to="/category/men/hoodies">Hoodies</Link>
-                  <Link className="dropdown-item" to="/category/men/sweaters">Sweaters</Link>
-                  <Link className="dropdown-item" to="/category/men/coats">Coats</Link>
+                  <Link className="dropdown-item" to="/men/topwear/tshirts">T-Shirts</Link>
+                  <Link className="dropdown-item" to="/men/topwear/shirts">Shirts</Link>
+                  <Link className="dropdown-item" to="/men/topwear/jackets">Jackets</Link>
+                  <Link className="dropdown-item" to="/men/topwear/hoodies">Hoodies</Link>
+                  <Link className="dropdown-item" to="/men/topwear/sweaters">Sweaters</Link>
+                  <Link className="dropdown-item" to="/men/topwear/coats">Coats</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Bottomwear</h6>
-                  <Link className="dropdown-item" to="/category/men/jeans">Jeans</Link>
-                  <Link className="dropdown-item" to="/category/men/trousers">Trousers</Link>
-                  <Link className="dropdown-item" to="/category/men/shorts">Shorts</Link>
-                  <Link className="dropdown-item" to="/category/men/joggers">Joggers</Link>
-                  <Link className="dropdown-item" to="/category/men/cargos">Cargos</Link>
-                  <Link className="dropdown-item" to="/category/men/chinos">Chinos</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/jeans">Jeans</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/trousers">Trousers</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/shorts">Shorts</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/joggers">Joggers</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/cargos">Cargos</Link>
+                  <Link className="dropdown-item" to="/men/bottomwear/chinos">Chinos</Link>
+
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Ethnic Wear</h6>
-                  <Link className="dropdown-item" to="/category/men/kurtas">Kurtas</Link>
-                  <Link className="dropdown-item" to="/category/men/sherwanis">Sherwanis</Link>
-                  <Link className="dropdown-item" to="/category/men/nehrujackets">Nehru Jackets</Link>
-                  <Link className="dropdown-item" to="/category/men/dhotis">Dhotis</Link>
-                  <Link className="dropdown-item" to="/category/men/ethnicsets">Ethnic Sets</Link>
-                  <Link className="dropdown-item" to="/category/men/pathan">Pathani</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/kurtas">Kurtas</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/sherwanis">Sherwanis</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/modi-jackets">Modi Jackets</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/dhotis">Dhotis</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/ethnicsets">Ethnic Sets</Link>
+                  <Link className="dropdown-item" to="/men/ethnicwear/pathani">Pathani</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Footwear</h6>
-                  <Link className="dropdown-item" to="/category/men/casualshoes">Casual Shoes</Link>
-                  <Link className="dropdown-item" to="/category/men/formalshoes">Formal Shoes</Link>
-                  <Link className="dropdown-item" to="/category/men/sneakers">Sneakers</Link>
-                  <Link className="dropdown-item" to="/category/men/sandals">Sandals</Link>
-                  <Link className="dropdown-item" to="/category/men/flipflops">Flip Flops</Link>
-                  <Link className="dropdown-item" to="/category/men/sports">Sports Shoes</Link>
+                  <Link className="dropdown-item" to="/men/footwear/casualshoes">Casual Shoes</Link>
+                  <Link className="dropdown-item" to="/men/footwear/formalshoes">Formal Shoes</Link>
+                  <Link className="dropdown-item" to="/men/footwear/sneakers">Sneakers</Link>
+                  <Link className="dropdown-item" to="/men/footwear/sandals">Sandals</Link>
+                  <Link className="dropdown-item" to="/men/footwear/flipflops">Flip Flops</Link>
+                  <Link className="dropdown-item" to="/men/footwear/sports">Sports Shoes</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Sportswear</h6>
-                  <Link className="dropdown-item" to="/category/men/sportstshirts">Sports T-Shirts</Link>
-                  <Link className="dropdown-item" to="/category/men/trackpants">Track Pants</Link>
-                  <Link className="dropdown-item" to="/category/men/gymwear">Gym Wear</Link>
-                  <Link className="dropdown-item" to="/category/men/sportsjackets">Sports Jackets</Link>
-                  <Link className="dropdown-item" to="/category/men/sportsaccessories">Accessories</Link>
-                  <Link className="dropdown-item" to="/category/men/jerseys">Jerseys</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/sports-tshirts">Sports T-Shirts</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/track-pants">Track Pants</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/gym-wear">Gym Wear</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/sports-jackets">Sports Jackets</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/accessories">Accessories</Link>
+                  <Link className="dropdown-item" to="/men/sports-wear/jerseys">Jerseys</Link>
                 </div>
               </div>
             </div>
@@ -83,47 +84,47 @@ export default function Navbar() {
                 {/* Women sections */}
                 <div className="me-5">
                   <h6 className="fw-bold">Topwear</h6>
-                  <Link className="dropdown-item" to="/category/women/tshirts">T-Shirts</Link>
-                  <Link className="dropdown-item" to="/category/women/tops">Tops</Link>
-                  <Link className="dropdown-item" to="/category/women/blouses">Blouses</Link>
-                  <Link className="dropdown-item" to="/category/women/kurthis">Kurtis</Link>
-                  <Link className="dropdown-item" to="/category/women/dresses">Dresses</Link>
-                  <Link className="dropdown-item" to="/category/women/sweaters">Sweaters</Link>
-                  <Link className="dropdown-item" to="/category/women/jackets">Jackets</Link>
+                  <Link className="dropdown-item" to="/women/tshirts">T-Shirts</Link>
+                  <Link className="dropdown-item" to="/women/tops">Tops</Link>
+                  <Link className="dropdown-item" to="/women/blouses">Blouses</Link>
+                  <Link className="dropdown-item" to="/women/kurthis">Kurtis</Link>
+                  <Link className="dropdown-item" to="/women/dresses">Dresses</Link>
+                  <Link className="dropdown-item" to="/women/sweaters">Sweaters</Link>
+                  <Link className="dropdown-item" to="/women/jackets">Jackets</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Bottomwear</h6>
-                  <Link className="dropdown-item" to="/category/women/jeans">Jeans</Link>
-                  <Link className="dropdown-item" to="/category/women/skirts">Skirts</Link>
-                  <Link className="dropdown-item" to="/category/women/shorts">Shorts</Link>
-                  <Link className="dropdown-item" to="/category/women/trousers">Trousers</Link>
-                  <Link className="dropdown-item" to="/category/women/leggings">Leggings</Link>
-                  <Link className="dropdown-item" to="/category/women/jeggings">Jeggings</Link>
-                  <Link className="dropdown-item" to="/category/women/culottes">Culottes</Link>
+                  <Link className="dropdown-item" to="/women/jeans">Jeans</Link>
+                  <Link className="dropdown-item" to="/women/skirts">Skirts</Link>
+                  <Link className="dropdown-item" to="/women/shorts">Shorts</Link>
+                  <Link className="dropdown-item" to="/women/trousers">Trousers</Link>
+                  <Link className="dropdown-item" to="/women/leggings">Leggings</Link>
+                  <Link className="dropdown-item" to="/women/jeggings">Jeggings</Link>
+                  <Link className="dropdown-item" to="/women/culottes">Culottes</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Ethnic Wear</h6>
-                  <Link className="dropdown-item" to="/category/women/kurtis">Kurtis</Link>
-                  <Link className="dropdown-item" to="/category/women/sarees">Sarees</Link>
-                  <Link className="dropdown-item" to="/category/women/lehenga">Lehenga</Link>
-                  <Link className="dropdown-item" to="/category/women/salwar">Salwar</Link>
-                  <Link className="dropdown-item" to="/category/women/ethnicsets">Ethnic Sets</Link>
+                  <Link className="dropdown-item" to="/women/kurtis">Kurtis</Link>
+                  <Link className="dropdown-item" to="/women/sarees">Sarees</Link>
+                  <Link className="dropdown-item" to="/women/lehenga">Lehenga</Link>
+                  <Link className="dropdown-item" to="/women/salwar">Salwar</Link>
+                  <Link className="dropdown-item" to="/women/ethnicsets">Ethnic Sets</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Footwear</h6>
-                  <Link className="dropdown-item" to="/category/women/flats">Flats</Link>
-                  <Link className="dropdown-item" to="/category/women/heels">Heels</Link>
-                  <Link className="dropdown-item" to="/category/women/sandals">Sandals</Link>
-                  <Link className="dropdown-item" to="/category/women/boots">Boots</Link>
-                  <Link className="dropdown-item" to="/category/women/sneakers">Sneakers</Link>
+                  <Link className="dropdown-item" to="/women/flats">Flats</Link>
+                  <Link className="dropdown-item" to="/women/heels">Heels</Link>
+                  <Link className="dropdown-item" to="/women/sandals">Sandals</Link>
+                  <Link className="dropdown-item" to="/women/boots">Boots</Link>
+                  <Link className="dropdown-item" to="/women/sneakers">Sneakers</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Sportswear</h6>
-                  <Link className="dropdown-item" to="/category/women/sportstshirts">Sports T-Shirts</Link>
-                  <Link className="dropdown-item" to="/category/women/sportsbras">Sports Bras</Link>
-                  <Link className="dropdown-item" to="/category/women/gymwear">Gym Wear</Link>
-                  <Link className="dropdown-item" to="/category/women/trackpants">Track Pants</Link>
-                  <Link className="dropdown-item" to="/category/women/sportsleggings">Sports Leggings</Link>
+                  <Link className="dropdown-item" to="/women/sportstshirts">Sports T-Shirts</Link>
+                  <Link className="dropdown-item" to="/women/sportsbras">Sports Bras</Link>
+                  <Link className="dropdown-item" to="/women/gymwear">Gym Wear</Link>
+                  <Link className="dropdown-item" to="/women/trackpants">Track Pants</Link>
+                  <Link className="dropdown-item" to="/women/sportsleggings">Sports Leggings</Link>
                 </div>
               </div>
             </div>
@@ -137,60 +138,60 @@ export default function Navbar() {
                 {/* Kids sections */}
                 <div className="me-5">
                 <h6 className="fw-bold">Boys Topwear</h6>
-                <Link className="dropdown-item" to="/category/kids/boytshirts">T-Shirts</Link>
-                <Link className="dropdown-item" to="/category/kids/boyshirts">Shirts</Link>
-                <Link className="dropdown-item" to="/category/kids/boyhoodies">Hoodies</Link>
-                <Link className="dropdown-item" to="/category/kids/boysweaters">Sweaters</Link>
+                <Link className="dropdown-item" to="/kids/boytshirts">T-Shirts</Link>
+                <Link className="dropdown-item" to="/kids/boyshirts">Shirts</Link>
+                <Link className="dropdown-item" to="/kids/boyhoodies">Hoodies</Link>
+                <Link className="dropdown-item" to="/kids/boysweaters">Sweaters</Link>
                 </div>
                 <div className="me-5">
                     <h6 className="fw-bold">Girls Topwear</h6>
-                    <Link className="dropdown-item" to="/category/kids/girltshirts">T-Shirts</Link>
-                    <Link className="dropdown-item" to="/category/kids/girldresses">Dresses</Link>
-                    <Link className="dropdown-item" to="/category/kids/girlhoodies">Hoodies</Link>
-                    <Link className="dropdown-item" to="/category/kids/girlsweaters">Sweaters</Link>
+                    <Link className="dropdown-item" to="/kids/girltshirts">T-Shirts</Link>
+                    <Link className="dropdown-item" to="/kids/girldresses">Dresses</Link>
+                    <Link className="dropdown-item" to="/kids/girlhoodies">Hoodies</Link>
+                    <Link className="dropdown-item" to="/kids/girlsweaters">Sweaters</Link>
                     
                     </div>
                     <div className="me-5">
                         <h6 className="fw-bold">Boys Bottomwear</h6>
-                        <Link className="dropdown-item" to="/category/kids/boyjeans">Jeans</Link>
-                        <Link className="dropdown-item" to="/category/kids/boyshorts">Shorts</Link>
-                        <Link className="dropdown-item" to="/category/kids/boyjoggers">Joggers</Link>
+                        <Link className="dropdown-item" to="/kids/boyjeans">Jeans</Link>
+                        <Link className="dropdown-item" to="/kids/boyshorts">Shorts</Link>
+                        <Link className="dropdown-item" to="/kids/boyjoggers">Joggers</Link>
                     </div>
                     <div className="me-5">
                         <h6 className="fw-bold">Girls Bottomwear</h6>
-                        <Link className="dropdown-item" to="/category/kids/girljeans">Jeans</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlskirt">Skirt</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlshorts">Shorts</Link>  
+                        <Link className="dropdown-item" to="/kids/girljeans">Jeans</Link>
+                        <Link className="dropdown-item" to="/kids/girlskirt">Skirt</Link>
+                        <Link className="dropdown-item" to="/kids/girlshorts">Shorts</Link>  
                     </div>
                     {/* Footwear section */} 
                     <div className="me-5">
                         <h6 className="fw-bold">Boys Footwear</h6>
-                        <Link className="dropdown-item" to="/category/kids/boycasualshoes">Casual Shoes</Link>
-                        <Link className="dropdown-item" to="/category/kids/boyformals">Formal Shoes</Link>
-                        <Link className="dropdown-item" to="/category/kids/boysneakers">Sneakers</Link>
-                        <Link className="dropdown-item" to="/category/kids/boysandals">Sandals</Link>
-                        <Link className="dropdown-item" to="/category/kids/boyflipflops">Flipflops</Link>
+                        <Link className="dropdown-item" to="/kids/boycasualshoes">Casual Shoes</Link>
+                        <Link className="dropdown-item" to="/kids/boyformals">Formal Shoes</Link>
+                        <Link className="dropdown-item" to="/kids/boysneakers">Sneakers</Link>
+                        <Link className="dropdown-item" to="/kids/boysandals">Sandals</Link>
+                        <Link className="dropdown-item" to="/kids/boyflipflops">Flipflops</Link>
                     </div>
                     <div className="me-5">
                         <h6 className="fw-bold">Girls Footwear</h6>
-                        <Link className="dropdown-item" to="/category/kids/girlcasualshoes">Casual Shoes</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlformals">Formal Shoes</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlsneakers">Sneakers</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlsandals">Sandals</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlflipflops">Flipflops</Link>
+                        <Link className="dropdown-item" to="/kids/girlcasualshoes">Casual Shoes</Link>
+                        <Link className="dropdown-item" to="/kids/girlformals">Formal Shoes</Link>
+                        <Link className="dropdown-item" to="/kids/girlsneakers">Sneakers</Link>
+                        <Link className="dropdown-item" to="/kids/girlsandals">Sandals</Link>
+                        <Link className="dropdown-item" to="/kids/girlflipflops">Flipflops</Link>
                     </div>
                     {/* Ethnic Wear section */}
                     <div className="me-5">
                         <h6 className="fw-bold">Boys Ethnic Wear</h6>
-                        <Link className="dropdown-item" to="/category/kids/boykurta">Kurta</Link>
-                        <Link className="dropdown-item" to="/category/kids/boysherwani">Sherwani</Link>
-                        <Link className="dropdown-item" to="/category/kids/boypathani">Pathani</Link>
+                        <Link className="dropdown-item" to="/kids/boykurta">Kurta</Link>
+                        <Link className="dropdown-item" to="/kids/boysherwani">Sherwani</Link>
+                        <Link className="dropdown-item" to="/kids/boypathani">Pathani</Link>
                     </div>
                     <div className="me-5">
                         <h6 className="fw-bold">Girls Ethnic Wear</h6>
-                        <Link className="dropdown-item" to="/category/kids/girlkurta">Kurta</Link>
-                        <Link className="dropdown-item" to="/category/kids/girlsaree">Saree</Link>
-                        <Link className="dropdown-item" to="/category/kids/girllehenga">Lehenga</Link>
+                        <Link className="dropdown-item" to="/kids/girlkurta">Kurta</Link>
+                        <Link className="dropdown-item" to="/kids/girlsaree">Saree</Link>
+                        <Link className="dropdown-item" to="/kids/girllehenga">Lehenga</Link>
                     </div>
                 </div>
             </div>
@@ -204,27 +205,27 @@ export default function Navbar() {
                 {/* Accessories sections */}
                 <div className="me-5">
                   <h6 className="fw-bold">Bags</h6>
-                  <Link className="dropdown-item" to="/category/accessories/backpacks">Backpacks</Link>
-                  <Link className="dropdown-item" to="/category/accessories/handbags">Handbags</Link>
-                  <Link className="dropdown-item" to="/category/accessories/clutches">Clutches</Link>
-                  <Link className="dropdown-item" to="/category/accessories/laptopbags">Laptop Bags</Link>
+                  <Link className="dropdown-item" to="/accessories/backpacks">Backpacks</Link>
+                  <Link className="dropdown-item" to="/accessories/handbags">Handbags</Link>
+                  <Link className="dropdown-item" to="/accessories/clutches">Clutches</Link>
+                  <Link className="dropdown-item" to="/accessories/laptopbags">Laptop Bags</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Jewellery</h6>
-                  <Link className="dropdown-item" to="/category/accessories/necklaces">Necklaces</Link>
-                  <Link className="dropdown-item" to="/category/accessories/earrings">Earrings</Link>
-                  <Link className="dropdown-item" to="/category/accessories/bracelets">Bracelets</Link>
-                  <Link className="dropdown-item" to="/category/accessories/rings">Rings</Link>
+                  <Link className="dropdown-item" to="/accessories/necklaces">Necklaces</Link>
+                  <Link className="dropdown-item" to="/accessories/earrings">Earrings</Link>
+                  <Link className="dropdown-item" to="/accessories/bracelets">Bracelets</Link>
+                  <Link className="dropdown-item" to="/accessories/rings">Rings</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Watches</h6>
-                  <Link className="dropdown-item" to="/category/accessories/menswatches">Men's Watches</Link>
-                  <Link className="dropdown-item" to="/category/accessories/womenswatches">Women's Watches</Link>
+                  <Link className="dropdown-item" to="/accessories/menswatches">Men's Watches</Link>
+                  <Link className="dropdown-item" to="/accessories/womenswatches">Women's Watches</Link>
                 </div>
                 <div className="me-5">
                   <h6 className="fw-bold">Belts</h6>
-                  <Link className="dropdown-item" to="/category/accessories/mensbelts">Men's Belts</Link>
-                  <Link className="dropdown-item" to="/category/accessories/womensbelts">Women's Belts</Link>
+                  <Link className="dropdown-item" to="/accessories/mensbelts">Men's Belts</Link>
+                  <Link className="dropdown-item" to="/accessories/womensbelts">Women's Belts</Link>
                 </div>
               </div>
             </div>
