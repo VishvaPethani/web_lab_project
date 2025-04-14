@@ -21,28 +21,28 @@ const Footer = () => {
         <div className="row text-center text-md-start border-bottom">
             <div className="row text-center mt-5 mb-3">
                 <div className="col-md-3 mb-0">
-                    <img src="/images/secure-payments.png" alt="Secure Payments" className="mb-2" />
+                    <img src="/images/footerimages/secure-payments.png" alt="Secure Payments" className="mb-2" />
                     <h5 className="fw-semibold">100% Secure Payments</h5>
                     <p className="text-muted small mb-0">
                     Moving your card details to a much more secured place
                     </p>
                 </div>
                 <div className="col-md-3 mb-4">
-                    <img src="/images/trustpay.png" alt="TrustPay" className="mb-3" />
+                    <img src="/images/footerimages/trustpay.png" alt="TrustPay" className="mb-3" />
                     <h5 className="fw-semibold">TrustPay</h5>
                     <p className="text-muted small mb-0">
                     100% Payment Protection. Easy Return Policy
                     </p>
                 </div>
                 <div className="col-md-3 mb-4">
-                    <img src="/images/help-center.png" alt="Help Center" className="mb-2" />
+                    <img src="/images/footerimages/help-center.png" alt="Help Center" className="mb-2" />
                     <h5 className="fw-semibold">Help Center</h5>
                     <p className="text-muted small mb-0">
                     Got a question? Browse our FAQs or submit your query here.
                     </p>
                 </div>
                 <div className="col-md-3 mb-4">
-                    <img src="/images/mobile-app.png" alt="Shop on the Go" className="mb-1" />
+                    <img src="/images/footerimages/mobile-app.png" alt="Shop on the Go" className="mb-1" />
                     <h5 className="fw-semibold">Shop on the Go</h5>
                     <p className="text-muted small mb-0">
                     Download the app and get exciting app only offers at your fingertips

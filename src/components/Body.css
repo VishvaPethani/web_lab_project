@@ -1,3 +1,8 @@
+.carousel-img {
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* Ensure aspect ratio & cropping */
+}
+
 /* Circle Image Section */
 .category-scroll {
   background-color: rgba(225, 165, 209, 0.622);

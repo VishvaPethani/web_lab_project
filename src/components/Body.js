@@ -4,8 +4,8 @@ import "./Body.css";
 import StarRating from "./Star-rating";
 
 const categories = [
-  "T-shirt", "Shirts", "Jeans", "Trousers", "Ethnic Sets",
-  "Footwear", "Home", "Accessory", "Winter"
+  "T-shirt", "Shirts", "Jeans", "Trousers", "Casuals", "Ethnic Sets",
+  "Footwear", "Accessory", "Summer"
 ];
 
 const offerTitles = [
@@ -22,6 +22,13 @@ const offerTitles = [
 const Body = () => {
   return (
     <div className="home-body">
+      {/* Tagline Heading */}
+      <div className="text-center py-3">
+        <h5 className="fw-bold">
+          Discover <span className="text-primary">WardrobeHUB</span> — Where Clothes Don’t Just Fit, They <span className="text-success">CALL You Apart</span>.
+        </h5>
+      </div>
+
       {/* Circle Category Icons */}
       <div className="category-scroll py-3">
         <div className="d-flex justify-content-center overflow-auto px-3">
@@ -49,16 +56,23 @@ const Body = () => {
         <Carousel fade indicators={false}>
           <Carousel.Item>
             <img
-              className="d-block w-100 rounded"
-              src="/images/offer1.jpg"
+              className="d-block w-100 rounded carousel-img"
+              src="/images/offers/offer1.jpg"
               alt="Offer 1"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100 rounded"
-              src="/images/offer2.jpg"
+              className="d-block w-100 rounded carousel-img"
+              src="/images/offers/offer2.jpg"
               alt="Offer 2"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 rounded carousel-img"
+              src="/images/offers/offer3.jpg"
+              alt="Offer 3"
             />
           </Carousel.Item>
         </Carousel>
@@ -106,14 +120,6 @@ const Body = () => {
                           alt="like"
                         />
                         <div className="small text-muted">{randomLikes}</div>
-                      </div>
-                      <div className="icon-btn">
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/128/891/891462.png"
-                          width="20"
-                          alt="cart"
-                        />
-                        <div className="small text-muted">Cart</div>
                       </div>
                     </div>
                   </div>
