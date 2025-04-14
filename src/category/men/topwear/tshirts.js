@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StarRating from "../../../components/Star-rating";
 import { Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -19,7 +20,7 @@ const products = [
     price: 948,
     originalPrice: 1199,
     rating: 4.1,
-    tags: ["Top Rated"]
+    tags: ["Top Rated"],
   },
   {
     id: 3,
@@ -28,7 +29,7 @@ const products = [
     price: 322,
     originalPrice: 533,
     rating: 4.5,
-    tags: ["Regular Fit"]
+    tags: ["Regular Fit"],
   },
   {
     id: 4,
@@ -37,7 +38,7 @@ const products = [
     price: 875,
     originalPrice: 1200,
     rating: 4.2,
-    tags: ["Polo", "Cotton"]
+    tags: ["Polo", "Cotton"],
   },
   {
     id: 5,
@@ -46,7 +47,7 @@ const products = [
     price: 322,
     originalPrice: 900,
     rating: 4.4,
-    tags: ["Regular Fit", "Cotton"]
+    tags: ["Regular Fit", "Cotton"],
   },
   {
     id: 6,
@@ -55,7 +56,7 @@ const products = [
     price: 799,
     originalPrice: 1100,
     rating: 4.3,
-    tags: ["Lightweight"]
+    tags: ["Lightweight"],
   },
   {
     id: 7,
@@ -64,7 +65,7 @@ const products = [
     price: 689,
     originalPrice: 999,
     rating: 4.5,
-    tags: ["Buttoned", "Regular Fit"]
+    tags: ["Buttoned", "Regular Fit"],
   },
   {
     id: 8,
@@ -73,7 +74,7 @@ const products = [
     price: 950,
     originalPrice: 1400,
     rating: 4.6,
-    tags: ["Slim Fit", "New", "Polyester"]
+    tags: ["Slim Fit", "New", "Polyester"],
   },
   {
     id: 9,
@@ -82,7 +83,7 @@ const products = [
     price: 849,
     originalPrice: 1300,
     rating: 4.7,
-    tags: ["Top Rated", "Stretchable"]
+    tags: ["Top Rated", "Stretchable"],
   },
   {
     id: 10,
@@ -91,7 +92,7 @@ const products = [
     price: 728,
     originalPrice: 1049,
     rating: 4.1,
-    tags: ["New Arrival"]
+    tags: ["New Arrival"],
   },
   {
     id: 11,
@@ -100,7 +101,7 @@ const products = [
     price: 422,
     originalPrice: 799,
     rating: 4.5,
-    tags: ["Soft Cotton", "Regular Fit"]
+    tags: ["Soft Cotton", "Regular Fit"],
   },
   {
     id: 12,
@@ -109,7 +110,7 @@ const products = [
     price: 915,
     originalPrice: 1200,
     rating: 4.2,
-    tags: ["Polo", "Breathable"]
+    tags: ["Polo", "Breathable"],
   },
   {
     id: 13,
@@ -118,7 +119,7 @@ const products = [
     price: 765,
     originalPrice: 1050,
     rating: 4.6,
-    tags: ["Slim Fit", "New"]
+    tags: ["Slim Fit", "New"],
   },
   {
     id: 14,
@@ -127,7 +128,7 @@ const products = [
     price: 799,
     originalPrice: 1199,
     rating: 4.4,
-    tags: ["Henley", "Top Rated"]
+    tags: ["Henley", "Top Rated"],
   },
   {
     id: 15,
@@ -136,7 +137,7 @@ const products = [
     price: 579,
     originalPrice: 833,
     rating: 4.3,
-    tags: ["Relaxed Fit", "Soft"]
+    tags: ["Relaxed Fit", "Soft"],
   },
   {
     id: 16,
@@ -145,38 +146,98 @@ const products = [
     price: 899,
     originalPrice: 1300,
     rating: 4.2,
-    tags: ["Polo", "Cotton", "Premium"]
-  }
+    tags: ["Polo", "Cotton", "Premium"],
+  },
 ];
 
 const filters = {
-  color: ["Red", "Blue", "Green", "Black", "White", "Yellow", "Grey"],
   fit: ["Slim Fit", "Regular Fit", "Oversized"],
   size: ["S", "M", "L", "XL", "XXL"],
   neck: ["Crew Neck", "V-Neck", "Polo", "Turtle Neck"],
+  color: [
+    "Red",
+    "Blue",
+    "Green",
+    "Black",
+    "White",
+    "Yellow",
+    "Grey",
+    "Maroon",
+    "Beige",
+    "Olive",
+    "Pink",
+    "Brown",
+    "Orange",
+    "Purple",
+    "Coral",
+    "Teal",
+    "Gold",
+    "Khaki",
+    "Tan",
+  ],
   material: ["Cotton", "Polyester", "Linen"],
   print: ["Solid", "Printed", "Striped"],
+  discountrange: [
+    "10% and above",
+    "20% and above",
+    "30% and above",
+    "40% and above",
+    "50% and above",
+    "60% and above",
+    "70% and above",
+    "80% and above",
+    "90% and above",
+  ],
 };
 
 const Tshirts = () => {
   const [likedProducts, setLikedProducts] = useState({});
+  const [priceRange, setPriceRange] = useState([100, 10100]);
 
   const toggleLike = (id) => {
     setLikedProducts((prev) => ({
       ...prev,
-      [id]: !prev[id]
+      [id]: !prev[id],
     }));
   };
+
+  const handlePriceChange = (e, index) => {
+    const newRange = [...priceRange];
+    newRange[index] = Number(e.target.value);
+    setPriceRange(newRange);
+  };
+
+ 
 
   return (
     <div className="container-fluid">
       <div className="row g-0">
         {/* Sidebar Filter */}
         <div
-          className="col-lg-2 bg-light border-end p-3"
+          className="col-lg-2 bg-light border-end p-3  position-sticky top-0"
           style={{ height: "100vh", overflowY: "auto" }}
         >
           <h5 className="mb-3">Filter & Sort</h5>
+
+          {/* Price Range Filter */}
+          <div className="mb-4">
+          <strong className="d-block mb-2">Price</strong>
+          <input
+            type="range"
+            min="100"
+            max="10100"
+            value={priceRange[1]}
+            onChange={(e) => setPriceRange([100, Number(e.target.value)])}
+            className="form-range"
+            style={{ accentColor: "#007bff" }}
+          />
+          <div className="mt-2 small">
+            ₹100 - ₹{priceRange[1] >= 10100 ? "10,100+" : priceRange[1]}
+          </div>
+        </div>
+
+
+          {/* Other Filters */}
           {Object.entries(filters).map(([key, values]) => (
             <div className="mb-3" key={key}>
               <strong className="text-capitalize">{key}</strong>
@@ -196,7 +257,7 @@ const Tshirts = () => {
                               height: "12px",
                               borderRadius: "50%",
                               border: "1px solid #999",
-                              marginRight: "6px"
+                              marginRight: "6px",
                             }}
                           ></span>
                           {val}
@@ -212,6 +273,8 @@ const Tshirts = () => {
           ))}
         </div>
 
+        
+
         {/* Product Grid */}
         <div className="col-lg-10 p-3">
           <div className="row g-3">
@@ -221,12 +284,14 @@ const Tshirts = () => {
               return (
                 <div className="col-6 col-md-4 col-lg-3" key={item.id}>
                   <div className="card h-100 shadow-sm">
+                  <Link to={`/men/topwear/tshirts/${item.id}`}>
                     <img
                       src={item.image}
                       className="card-img-top"
                       alt={item.name}
                       style={{ height: "340px", objectFit: "cover" }}
                     />
+                  </Link>
                     <div className="card-body p-2 d-flex flex-column">
                       <h6 className="card-title text-truncate mb-1">
                         {item.name}
@@ -244,8 +309,8 @@ const Tshirts = () => {
                           <img
                             src={
                               isLiked
-                                ? "https://cdn-icons-png.flaticon.com/128/833/833472.png" // filled heart
-                                : "https://cdn-icons-png.flaticon.com/128/1077/1077035.png" // empty heart
+                                ? "https://cdn-icons-png.flaticon.com/128/833/833472.png"
+                                : "https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
                             }
                             width="18"
                             alt="like"
@@ -283,7 +348,6 @@ const Tshirts = () => {
                           </span>
                         ))}
                       </div>
-
                     </div>
                   </div>
                 </div>

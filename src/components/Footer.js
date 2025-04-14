@@ -127,7 +127,7 @@ const Footer = () => {
 
        <div className="row mt-4 border-top pt-3">
           <div className="col-12 text-center">
-            <small>&copy; {new Date().getFullYear()} WardrobeHUB. All rights reserved.      Developed by YourName.</small>
+            <small>&copy; {new Date().getFullYear()} WardrobeHUB. All rights reserved.      Developed by VishvaPethani.</small>
           </div>
         </div>
       </div>

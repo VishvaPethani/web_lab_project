@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import LoginPage from "./components/login";
+
 
 // MEN - TOPWEAR
 import Tshirts from "./category/men/topwear/tshirts";
+import TshirtsDetails from "./category/men/topwear/tshirtsDetails";
 import Shirts from "./category/men/topwear/shirts";
 import Sweaters from "./category/men/topwear/sweaters";
 import Jackets from "./category/men/topwear/jackets";
@@ -44,16 +47,18 @@ import SportsJackets from "./category/men/sports-wear/sports-jackets";
 import SportsTshirt from "./category/men/sports-wear/sports-tshirt";
 import TrackPants from "./category/men/sports-wear/track-pants";
 
-// You can import ethnicwear and footwear similarly
 
 export default function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+
+      <Route path="/login" element={<LoginPage />} />
         {/* MEN - TOPWEAR */}
         <Route path="/" element={<Body />} />
         <Route path="/men/topwear/tshirts" element={<Tshirts />} />
+        <Route path="/men/topwear/tshirts/:id" element={<TshirtsDetails />} />
         <Route path="/men/topwear/shirts" element={<Shirts />} />
         <Route path="/men/topwear/sweaters" element={<Sweaters />} />
         <Route path="/men/topwear/jackets" element={<Jackets />} />

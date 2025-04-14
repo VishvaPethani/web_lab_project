@@ -244,17 +244,39 @@ export default function Navbar() {
         </form>
 
         <div className="d-flex align-items-center text-center">
-          <Link to="/wishlist" className="btn me-0 d-flex flex-column align-items-center">
-            <FaHeart size={20} />
-            <small>Wishlist</small>
-          </Link>
-          <Link to="/login" className="btn me-0 d-flex flex-column align-items-center">
-            <FaUser size={20} />
-            <small>Account</small>
-          </Link>
+          
+        <div className="nav-item dropdown position-relative me-3">
+  <div className="btn d-flex flex-column align-items-center p-0 m-0" id="accountDropdown" role="button">
+    <FaUser size={20} />
+    <small>Account</small>
+  </div>
+  <div className="dropdown-menu me-3 shadow profile-dropdown" aria-labelledby="accountDropdown">
+  <div className="account-info mb-2 px-3">
+    <p><b>Welcome</b></p>
+    <p>To access account and manage orders</p>
+    <button><Link className="btn dropdown-item login-width" to="/login">LOGIN/SIGNUP</Link></button>
+    </div>
+    <div className="dropdown-divider"></div>
+    <Link className="dropdown-item" to="/orders">Orders</Link>
+    <Link className="dropdown-item" to="/whislist">Wishlist</Link>
+    <Link className="dropdown-item" to="/giftcards">Gift Cards</Link>
+    <Link className="dropdown-item" to="/contactus">Contact Us</Link>
+    <div className="dropdown-divider"></div>
+    <Link className="dropdown-item" to="/credits">Credits</Link>
+    <Link className="dropdown-item" to="/coupons">Coupons</Link>  
+    <Link className="dropdown-item" to="/savedcards">Saved Cards</Link>
+    <Link className="dropdown-item" to="/savedaddresses">Saved Addresses</Link> 
+    <div className="dropdown-divider"></div>
+    <Link className="dropdown-item" to="/logout">Logout</Link>
+  </div>
+</div>
           <Link to="/cart" className="btn d-flex flex-column align-items-center">
             <FaShoppingCart size={20} />
             <small>Cart</small>
+          </Link>
+          <Link to="/wishlist" className="btn me-0 d-flex flex-column align-items-center">
+            <FaHeart size={20} />
+            <small>Wishlist</small>
           </Link>
         </div>
       </div>
@@ -265,8 +287,25 @@ export default function Navbar() {
         }
       
         .w-80 {
-        width: 80% !important;
-        }`}</style>
+        width: 70% !important;
+      }
+        
+  .dropdown-menu {
+    min-width: 160px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+  }
+
+   .profile-dropdown {
+    width: 230px; /
+  }
+`}</style>
+
     </nav>
 
     
